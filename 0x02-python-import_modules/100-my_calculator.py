@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
-from .calculator_1 import (add,sub,mul,div)
+if __name__ == "__main__":
+    from .calculator_1 import (add,sub,mul,div)
 a = int(sys.argv[0])
 operator = sys.argv[1]
 b = int(sys.argv[2])
