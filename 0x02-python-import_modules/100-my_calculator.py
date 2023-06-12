@@ -10,6 +10,7 @@ operator = sys.argv[2]
 b = int(sys.argv[3])
 if operator not in ['+','-','*','/']:
     print("Unknown operator. Available operators: +, -, * and /")
+    exit(1)
 elif operator == '+':
     print("{} {} {} = {}".format(a,operator,b,add(a,b)))
 elif operator == '-':
