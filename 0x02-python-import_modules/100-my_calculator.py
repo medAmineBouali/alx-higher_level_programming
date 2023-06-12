@@ -8,7 +8,7 @@ b = int(sys.argv[2])
 if sys.argv.__len__ != 3:
     print("Usage: ./100-my_calculator.py <a> <operator> <b>")
     exit(1)
-if operator not in {'+','-','*','/'}:
+if operator not in ['+','-','*','/']:
     print("Unknown operator. Available operators: +, -, * and /")
 elif operator == '+':
     print("{} {} {} = {}".format(a,operator,b,add(a,b)))
