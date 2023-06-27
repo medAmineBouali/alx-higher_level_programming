@@ -4,6 +4,6 @@
 
 class Square:
 
-    def __init__(self, size):
-        if size:
+    def __init__(self, size=None):
+        if size is not None:
             self.__size = int(size)
