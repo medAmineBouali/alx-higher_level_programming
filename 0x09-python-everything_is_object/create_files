@@ -1,5 +1,0 @@
-#!/bin/bash
-
-for i in {100..106}; do
-  touch $i-answer.txt
-done
