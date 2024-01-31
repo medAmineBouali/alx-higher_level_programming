@@ -50,6 +50,7 @@ class Rectangle:
             return rect
         for i in range(0,self.__height):
             rect += "#" * self.__width
-            rect += "\n"
+            if i < self.__height -1:
+                rect += "\n"
         return rect
         
