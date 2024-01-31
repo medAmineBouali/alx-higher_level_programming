@@ -46,6 +46,8 @@ class Rectangle:
     def __str__(self) -> str:
         """Return the string format of the Rectangle."""
         rect = ""
+        if self.__width == 0:
+            return rect
         for i in range(0,self.__height):
             rect += "#" * self.__width
             rect += "\n"
