@@ -1,3 +1,4 @@
+
 #!/usr/bin/python3
 """This program define a class Rectangle with it attributes"""
 
@@ -53,3 +54,6 @@ class Rectangle:
             if i < self.__height -1:
                 rect += "\n"
         return rect
+    def __repr__(self):
+        """ return a string representation of the rectangle"""
+        return f"Rectangle({self.__width}, {self.__height})"
