@@ -7,6 +7,7 @@ class Rectangle:
     A Rectangle Class with the private instance attributes width and height
     """
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         self.width = width
@@ -54,7 +55,7 @@ class Rectangle:
         if self.__width == 0:
             return rect
         for i in range(0,self.__height):
-            rect += "#" * self.__width
+            rect += self.print_symbol * self.__width
             if i < self.__height -1:
                 rect += "\n"
         return rect
