@@ -55,7 +55,7 @@ class Rectangle:
         if self.__width == 0:
             return rect
         for i in range(0,self.__height):
-            rect += self.print_symbol * self.__width
+            rect += str(self.print_symbol) * self.__width
             if i < self.__height -1:
                 rect += "\n"
         return rect
