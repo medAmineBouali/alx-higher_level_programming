@@ -3,8 +3,4 @@
 
 def lookup(obj):
     """Return a list of an object's available attributes."""
-    return (dir(obj))
-class Find:
-    pass
-me = Find()
-print(lookup(me))
+    return [dir(obj)]
