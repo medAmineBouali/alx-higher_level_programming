@@ -1,13 +1,21 @@
 #!/usr/bin/python3
 
 class Base:
+    """
+    Base class for managing object creation with unique identifiers.
+    """
+
     __nb_objects = 0
-    def __init__(self, id = None):
-        if not (id is None):
+
+    def __init__(self, id=None):
+        """
+        Initializes a new instance of the Base class.
+
+        Args:
+        - id (int): Optional. The identifier for the object. If not provided, a new unique identifier will be assigned.
+        """
+        if id is not None:
             self.id = id
         else:
-            self.new_obj()
-            self.id = self.__nb_objects
-    @classmethod
-    def new_obj(cls):
-        cls.__nb_objects += 1
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
