@@ -2,7 +2,7 @@
 /*
 script that chack if arguments are passed:
 */
-const argCount = ProcessingInstruction.arguments.length -2;
+const argCount = process.argv.length - 2;
 
 if (argCount === 0) {
   console.log('No argument');
