@@ -7,7 +7,7 @@ directory_path="."
 for file in "$directory_path"/*; do
   # Check if it's a file
   if [ -f "$file" ]; then
-    chmod +x "$file"
+    chmod u+x "$file"
     echo "Permissions changed for $file"
   fi
 done
